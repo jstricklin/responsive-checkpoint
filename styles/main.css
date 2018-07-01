@@ -1,0 +1,31 @@
+.logo {
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+h1 {
+    font-size: 175%;
+}
+.top-banner {
+    background: rgb(50, 50, 50);
+}
+header a {
+    
+    margin: 15px;
+    color: lightgrey;
+    text-decoration: none;
+    /* border-right: 2px solid grey; */
+}
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.important {
+    background-color: lightgreen;
+}
+main .row {
+    padding-top: 5%;
+    text-align: center;
+}
