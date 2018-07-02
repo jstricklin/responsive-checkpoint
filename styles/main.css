@@ -2,6 +2,8 @@
     display: flex;
     justify-content: center;
     color: white;
+    margin: 0;
+    padding: 0;
 }
 a, p, h1 {
     padding: 0;
@@ -37,22 +39,29 @@ nav {
     padding: 2%;
     color: green;
 }
+.card {
+    margin: 3%;
+}
 main .row {
     padding-top: 5%;
     text-align: center;
 }
 .card-body {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     /* flex-direction: column; */
+}
+.download-links {
+    margin: 2%;
 }
 .download-box {
     display: flex;
     flex-direction: column;
     align-items: center;
     background-color: green;
+    border-radius: 3px;
     color: white;
-    margin: 3%;
+    margin: 2%;
     padding: 3%;
     padding-bottom: 1%;
 }
@@ -60,8 +69,51 @@ footer {
     margin: 0;
     background-color: rgb(50, 50, 50);
 }
+footer p {
+    font-size: 10pt;
+}
+
 .footer-nav, .footer-brand {
     display: flex;
+    width: 100%;
     flex-flow: row nowrap;
+    justify-content: space-between;
     align-items: center;
+    padding-top: 1%;
+}
+.footer-brand {
+    justify-content: flex-start;
+}
+.footer-brand h1 {
+    font-weight: bold;
+    font-size: 90%;
+    margin-right: 3pt;
+}
+.footer-brand p {
+    color: green;
+    font-weight: 100;
+}
+.footer-links {
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+    /* margin-right: 1%; */
+}
+.footer-links a {
+    /* display: flex; */
+    margin-right:1%;
+    font-size: 10pt;
+    color: lightgrey;
+}
+.copyright {
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+@media (min-width: 320px) and (max-width: 680px){
+    nav {
+        flex-wrap: wrap; 
+    }
+    .card-body {
+        flex-direction: column;
+    }
 }
